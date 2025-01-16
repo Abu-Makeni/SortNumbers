@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Collector & Processor</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Number Collector and Processor</h1>
+
+        <div class="main-content">
+            <!-- Left side: Input section for entering numbers -->
+            <div class="input-section">
+                <label for="numCount">Enter the number of numbers:</label>
+                <input type="number" id="numCount" placeholder="Number of inputs">
+                
+                <div id="numbersInputs"></div>
+                
+                <button id="collectNumbersButton">Collect Numbers</button>
+            </div>
+
+            <!-- Right side: Sorting options -->
+            <div class="sorting-options">
+                <label for="sortingOrder">Choose sorting order:</label>
+                <select id="sortingOrder">
+                    <option value="A">Ascending</option>
+                    <option value="D">Descending</option>
+                </select>
+                <button id="sortNumbersButton">Sort Numbers</button>
+            </div>
+        </div>
+
+        <!-- Output section for displaying sorted numbers -->
+        <div id="outputSection">
+            <h2>Sorted Numbers:</h2>
+            <ul id="sortedNumbersList"></ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
