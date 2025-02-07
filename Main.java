@@ -15,9 +15,10 @@ public class Main {
         // Create an instance of NumberProcessor
         NumberProcessor processor = new NumberProcessor();
         NumberProcessorDescending processorDescending=new NumberProcessorDescending();
+        EvenOrOdd evenOrOdd=new EvenOrOdd();
         DisplayNumbers display=new DisplayNumbers();
 
-        System.out.println("Choose \'A\' for ascending or \'D\'for descending:");
+        System.out.println("Choose \'A\' for ascending , \'D\'for descending ,\'E\' for even or \'O\' for odd:");
         char choices=input.next().charAt(0);
 
         switch (choices) {
@@ -25,12 +26,23 @@ public class Main {
          
             // Sort the numbers
             processor.sortNumbersAscending(numbers);
-                
                 break;
+                
             case 'D':
             
             // Sort the numbers
             processorDescending.sortNumbersDescending(numbers);
+                break;
+
+            case 'E':
+
+            evenOrOdd.EvenNumber(numbers);
+                break;
+
+            case 'O':
+
+            evenOrOdd.OddNumber(numbers);
+                break;
 
         
             default:

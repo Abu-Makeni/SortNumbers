@@ -5,6 +5,7 @@ public class NumberCollector {
     ArrayList<Long> numbers = new ArrayList<>();
     Scanner input = new Scanner(System.in);
 
+   
     // Method to collect 8 long numbers from the user
     public void collectLong() {
 
